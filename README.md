@@ -43,7 +43,7 @@ To install ckanext-dashboard-charts:
 
 2. Clone the source and install it on the virtualenv
 
-    git clone https://github.com//ckanext-dashboard-charts.git
+    git clone https://github.com/dishubagga/ckan-daino-dashboards-charts
     cd ckanext-dashboard-charts
     pip install -e .
 	pip install -r requirements.txt
