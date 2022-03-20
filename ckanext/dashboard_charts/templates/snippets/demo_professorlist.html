@@ -54,10 +54,10 @@
     Plotly.newPlot("myPlot2", dataOfPie, layout);
 
   }   
-  http.open("POST", "http://localhost:5000/api/3/action/datastore_search");
+  http.open("POST", "http://hecht.informatik.tu-chemnitz.de/api/3/action/datastore_search");
   http.setRequestHeader( 'Content-Type', 'application/x-www-form-urlencoded');
   http.send(JSON.stringify({"resource_id":"1f34240a-3e54-4909-b1a2-ecb98a0b7dfe","q":"","filters":{},"limit":35000,"offset":0,"total_estimation_threshold":1000}));
-    // xhttp.send(JSON.stringify({"resource_id":"1f34240a-3e54-4909-b1a2-ecb98a0b7dfe","q":"","filters":{},"limit":35000,"offset":0,"total_estimation_threshold":1000}));
+    // xhttp.send(JSON.stringify({"resource_id":"f423c29e-4755-407e-998b-b26489a43818","q":"","filters":{},"limit":35000,"offset":0,"total_estimation_threshold":1000}));
 
  
 </script>
