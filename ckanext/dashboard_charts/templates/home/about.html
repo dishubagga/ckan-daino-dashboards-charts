@@ -79,31 +79,28 @@ mark{
 
 </style>
 
-<div class="box" id='box'>
+<div  id='box'>
     <header class="module-heading">
-        <h3 style='text-align : center'>Expert With Expertise</h3>
+        <h3 style='text-align : center'>Experts</h3>
     </header>
+    <div class="col-sm-offset-4 col-sm-6">
+      <section class="module-content" id = "noparams"></section>
+    </div>
     <section class="module-content" id="daino">
-       
+   
+     
     </section>
 </div>
 
-<div class="box" id='box'>
-<div id = "publist">
- 
 
-</div>
   
-</div>
 
 
-<div class = "container">
+<!-- <div class = "container">
     <div class = "row">
-        <div class="col-sm-offset-4 col-sm-6"">
-            <section class="module-content" id = "noparams"></section>
-        </div>
+        
     </div>
-</div>
+</div> -->
 
 <script LANGUskill2="JavaScript">
 	//const url = document.URL.indexOf('/');
@@ -301,10 +298,10 @@ mark{
             		`
             		<div class="col-lg-4 col-sm-offset-4">
     <div class="input-group">
-      <input type="text" id="text-to-search" class="form-control" placeholder="Search for...">
+      <input type="text" id="text-to-search" class="form-control" style="margin-bottom: 20px" placeholder="Search for...">
       
       <span class="input-group-btn">
-        <button class="btn btn-default" type="button"  onclick="search()">Search</button>
+        <button class="btn btn-default" type="button" style="margin-bottom: 20px" onclick="search()">Search</button>
        
       </span>
     </div><!-- /input-group -->
@@ -458,7 +455,7 @@ mark{
                  
         http.open("POST", "http://"+String(window.location.host)+"/api/3/action/datastore_search");
         http.setRequestHeader( 'Content-Type', 'application/x-www-form-urlencoded');
-        http.send(JSON.stringify({"resource_id":"18208842-1c49-4e26-a37a-7f6217137d5a","q": query,"filters":{},"limit":35000,"offset":0,"total_estimation_threshold":1000})); 
+        http.send(JSON.stringify({"resource_id":"f423c29e-4755-407e-998b-b26489a43818","q": query,"filters":{},"limit":35000,"offset":0,"total_estimation_threshold":1000})); 
        
         }
         else{
@@ -472,7 +469,7 @@ mark{
              <td>
                 <div class="input-group col-lg-12" style='margin-top: 5px'>
                    <span class="input-group-addon"><i  id="sizing-addon1" class="fa fa-search" aria-hidden="true"></i></span>
-                   <input list="areas" id="area dSuggest" class="form-control" name="main" aria-describedby="sizing-addon1" placeholder="enter a expert name">
+                   <input list="areas" id="area dSuggest" class="form-control" name="main" aria-describedby="sizing-addon1" placeholder="enter an expert name">
                    <datalist id="areas">
                    `;
             window.ajaxOptions = {
@@ -549,7 +546,7 @@ mark{
     }
         http.open("POST", "http://"+String(window.location.host)+"/api/3/action/datastore_search");
         http.setRequestHeader( 'Content-Type', 'application/x-www-form-urlencoded');
-        http.send(JSON.stringify({"resource_id":"18208842-1c49-4e26-a37a-7f6217137d5a","q": '',"filters":{},"limit":35000,"offset":0,"total_estimation_threshold":1000})); 
+        http.send(JSON.stringify({"resource_id":"f423c29e-4755-407e-998b-b26489a43818","q": '',"filters":{},"limit":35000,"offset":0,"total_estimation_threshold":1000})); 
     	
        }
 </script>
