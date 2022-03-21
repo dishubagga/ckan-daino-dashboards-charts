@@ -92,6 +92,14 @@ mark{
     </section>
 </div>
 
+<div class="box" id='publist-box'>
+  <div id = "publist">
+   
+  
+  </div>
+    
+  </div>
+
 
   
 
@@ -105,16 +113,17 @@ mark{
 <script LANGUskill2="JavaScript">
 	//const url = document.URL.indexOf('/');
 	//document.write(window.location.host)
-    function getParams() 
-    {
-    	var idx = document.URL.indexOf('?'); 
-    	var params = new Array(); 
-    	if (idx != -1)  
-    	{	var pairs = document.URL.substring(idx+1, document.URL.length).split('&'); 
-    		for (var i=0; i<pairs.length; i++){nameVal = pairs[i].split('='); 
-    			params[nameVal[0]] = nameVal[1];}} 
-    			return params;
-    }
+	document.getElementById("publist-box").style.display = 'none'; 
+    	function getParams() 
+    	{
+    		var idx = document.URL.indexOf('?'); 
+    		var params = new Array(); 
+    		if (idx != -1)  
+    		{	var pairs = document.URL.substring(idx+1, document.URL.length).split('&'); 
+    			for (var i=0; i<pairs.length; i++){nameVal = pairs[i].split('='); 
+    				params[nameVal[0]] = nameVal[1];}} 
+    				return params;
+    		}
     
     	params = getParams();
     	 
@@ -449,6 +458,7 @@ mark{
     </tbody></table></section>`;
       
           document.getElementById("daino").innerHTML = tab;
+	  document.getElementById("publist-box").style.display = 'none'; 
           document.getElementById("publist").innerHTML = tab2;
        
         } 
